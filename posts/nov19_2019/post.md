@@ -2,7 +2,7 @@
 
 # Prediction markets are coming to Cheeze Wizards!
 
-During the final phase of the Cheeze Wizards tournament, COI will be releasing prediction markets on Augur. These markets allow you to place bets of ETH on outcomes of the next dueling window! For example, you'll be able to bet on whether the power of a specific wizard will increase or if they'll be molded!
+COI will soon be releasing Cheeze Wizards prediction markets on Augur! These markets will allow you to bet ETH on outcomes of dueling and mold events in the tournament. For example, you'll be able to bet on whether the power of a specific wizard will increase or if they'll be molded!
 
 ## "Okay, but what's Augur?"
 
@@ -154,7 +154,7 @@ TheRealDW:
 > Being a high powered wizard was nice because you could bully smaller wizards. They need to win two duels just to gain any power sometimes which helps the odds. Also, you can make much more in each Duel playing for higher stakes.
 
 
-# GL EVERYONE, & SEE YOU IN THE FIGHT WINDOW!
+# GL EVERYONE & SEE YOU IN THE FIGHT WINDOW!
 
 
 
