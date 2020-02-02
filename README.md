@@ -1,2 +1,2 @@
 # coi-blog
-https://medium.com/@cheezeofinsight
+https://medium.com/@chainofinsight
