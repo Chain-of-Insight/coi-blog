@@ -44,7 +44,7 @@ With our new game *Satohis's Lost Faucet* just getting ready for launch (see: ![
 
 Stay tuned! 😊
 
-![](https://github.com/Cheeze-Of-Insight/coi-blog/blob/master/posts/feb2_2020/assets/shallweplayagame.jpg)
+![](https://github.com/Cheeze-Of-Insight/coi-blog/blob/master/posts/feb2_2020/assets/shallweplayagame.png)
 
 
 
