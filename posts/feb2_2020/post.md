@@ -26,7 +26,7 @@ We certainly noticed how the reveal stage of game play effected the play experie
 
 With all of this in mind our team travelled to ETH Waterloo II and created Fonduels. 
 
-[ETH Waterloo pics]
+[ethwaterloo2.jpg]
 
 > Enigma is a [decentralized] secure computation network that acts as a layer 2 solution for Ethereum. Enigma introduces the concept of secret contracts, which are identical to Ethereum contracts but can compute on sensitive data.
 
@@ -36,9 +36,16 @@ By processing reveal transactions in an Enigma secret contract, we created a mod
 
 ## What's next for Fonduels?
 
-We're really excited by the opportunities Enigma has to offer driven crypto games. Now that we know what's possible, we're going rebuilding our Fonduels proof of concept project into a platform that can be used, not just for Cheeze Wizards, but any turn based blockchain game that requires committing encrypted choices and revealing them later.
+We're excited by the opportunities Enigma has to offer driven crypto games. Now that we know what's possible we're rebuilding Fonduels into a general platform that can be used by any turn based blockchain game requiring committing and revealing encrypted turns.
 
- 
+[https://github.com/Chain-of-Insight/fonduels]
+
+With our new game *Satohis's Lost Faucet* just getting ready for launch (see: https://twitter.com/chainofinsight/status/1218663910120792065), Fonduels has moved up to our top priority. 
+
+Stay tuned! 😊
+
+[shallweplayagame]
+
 
 
 
