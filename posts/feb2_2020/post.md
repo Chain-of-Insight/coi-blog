@@ -1,4 +1,4 @@
-# Introducing "Fonduels" a new project built on Enigma
+# Introducing "Fonduels" a new project from COI built on Enigma
 
 ![](https://github.com/Cheeze-Of-Insight/coi-blog/blob/master/posts/feb2_2020/assets/secretcontracts.png)
 
