@@ -35,10 +35,10 @@ By processing reveal transactions in an Enigma secret contract, we created a mod
 
 ## What's next for Fonduels?
 
-We're excited by the opportunities Enigma has to offer driven crypto games. Now that we know what's possible we're rebuilding Fonduels into a general platform that can be used by any turn based blockchain game requiring committing and revealing encrypted turns.
-
 - https://devpost.com/software/fonduels
 - https://github.com/Chain-of-Insight/fonduels
+
+We're excited by the opportunities Enigma has to offer driven crypto games. Now that we know what's possible we're rebuilding Fonduels into a general platform that can be used by any turn based blockchain game requiring committing and revealing encrypted turns.
 
 With our new game *Satoshis's Lost Faucet* just getting ready for launch (see: ![](https://twitter.com/chainofinsight/status/1218663910120792065)), Fonduels has moved up to our top priority. 
 
