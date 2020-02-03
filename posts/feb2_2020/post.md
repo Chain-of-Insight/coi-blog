@@ -22,7 +22,7 @@ And really, that's what Fonduels is all about.
 
 ## Let the Fonduels begin!
 
-We certainly noticed how the reveal stage of game play effected the play experience the Cheeze Wizards game from Dapper Labs. In Cheeze Wizards if a player refused to reveal their moves, the two NFTs in question would be locked in a battle for 90 minutes until the automatic duel time out function would finally kick in and process the game result. Because Cheeze Wizards fight windows lasted for only three hours with about 4 hours between windows, most NFTs involved timed out duels won't get to battle again until the next fight window (even though a smoothly coordinated duel might typically settle in as fast as 15 to 20 minutes).
+We noticed how the reveal stage effected the play experience the Cheeze Wizards game from Dapper Labs. In Cheeze Wizards if a player refused to reveal their moves, the two NFTs in question would be locked in a battle for 90 minutes until the automatic duel time out function would finally kick in and process the game result. Because Cheeze Wizards fight windows lasted for only three hours with about 4 hours between windows, most NFTs involved timed out duels won't get to battle again until the next fight window (even though a smoothly coordinated duel might typically settle in as fast as 15 to 20 minutes).
 
 (more info on timed out duels: https://medium.com/dapperlabs/a-step-by-step-walkthrough-of-a-cheeze-wizards-duel-b262701792e5)
 
