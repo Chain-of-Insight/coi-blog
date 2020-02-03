@@ -40,7 +40,7 @@ We're excited by the opportunities Enigma has to offer driven crypto games. Now 
 - https://devpost.com/software/fonduels
 - https://github.com/Chain-of-Insight/fonduels
 
-With our new game *Satohis's Lost Faucet* just getting ready for launch (see: ![](https://twitter.com/chainofinsight/status/1218663910120792065)), Fonduels has moved up to our top priority. 
+With our new game *Satoshis's Lost Faucet* just getting ready for launch (see: ![](https://twitter.com/chainofinsight/status/1218663910120792065)), Fonduels has moved up to our top priority. 
 
 Stay tuned! 😊
 
