@@ -44,7 +44,7 @@ We're excited by the opportunities Enigma has to offer driven crypto games. Now 
 
 With our new game *Satoshis's Lost Faucet* just getting ready for launch (see: ![](https://twitter.com/chainofinsight/status/1218663910120792065)), Fonduels has moved up to our top priority. 
 
-We're hoping to have a beta version of Fonduels, with documentation, available early spring. Stay tuned for more updates! 😊
+We're hoping to have a beta version of Fonduels, with documentation, available in early spring. Stay tuned for more updates! 😊
 
 ![](https://github.com/Cheeze-Of-Insight/coi-blog/blob/master/posts/feb2_2020/assets/shallweplayagame.png)
 
