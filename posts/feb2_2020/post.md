@@ -32,13 +32,13 @@ With all of this in mind our team travelled to ETH Waterloo II and created Fondu
 
 By processing reveal transactions in an Enigma secret contract, we created a modified version of the Cheeze Wizards game that eliminated the second stage of reveal transactions and removed the need for resolving timed out duels. This provided players with a lightning quick gameplay experience at a minimum of 50% faster dueling and zero risk of duels timing out.
 
-![](https://devpost.com/software/fonduels)
 
 ## What's next for Fonduels?
 
 We're excited by the opportunities Enigma has to offer driven crypto games. Now that we know what's possible we're rebuilding Fonduels into a general platform that can be used by any turn based blockchain game requiring committing and revealing encrypted turns.
 
-![](https://github.com/Chain-of-Insight/fonduels)
+- https://devpost.com/software/fonduels
+- https://github.com/Chain-of-Insight/fonduels
 
 With our new game *Satohis's Lost Faucet* just getting ready for launch (see: ![](https://twitter.com/chainofinsight/status/1218663910120792065)), Fonduels has moved up to our top priority. 
 
