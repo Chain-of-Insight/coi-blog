@@ -8,7 +8,7 @@
 
 ## That's cool, what's it got to do with blockchain games?
 
-Imagine a turn based game processed a public blockchain (like Ethereum) where two players battle each other. The game works by each player submitting choices to a smart contract. The game contract takes those moves, processes them according to the game's logic, and declares one of the players victorious. Since the game is processed on Ethereum turns would be public to anyone who wants to see them, including your opponent who might be watching and waiting for your moves to cheat the outcome. 😱
+Imagine a turn based game processed on a public blockchain (like Ethereum) where two players battle each other. The game works by each player submitting choices to a smart contract. The game contract takes those moves, processes them according to the game's logic, and declares one of the players victorious. Since the game is processed on Ethereum turns would be public to anyone who wants to see them, including your opponent who might be watching and waiting for your moves to cheat the outcome. 😱
 
 To prevent snooping on our tactics, we'll have our game encrypt the moves it uploads to the blockchain and wait for both players to submit moves before revealing them publicly. This reveal commitment is a second transaction and some extra logic might be required to automatically process a game result in case only player decides to reveal. This could happen if the second player sees they already see lost, because of what player 1 revealed, and is being a bit of a sore loser 🥊 
 
