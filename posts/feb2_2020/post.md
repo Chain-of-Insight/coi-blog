@@ -1,5 +1,7 @@
 # Introducing "Fonduels" a new project built on Enigma
 
+![](https://github.com/Cheeze-Of-Insight/coi-blog/blob/master/posts/feb2_2020/assets/secretcontracts.png)
+
 ## Slow down there cheeze whiz, what's this Enigma?
 
 > Enigma is a decentralized, open-source protocol that lets anyone perform computations on encrypted data, bringing privacy to smart contracts and public blockchains. Our mission: improve the adoption and usability of decentralized technologies, for the benefit of all.
@@ -22,7 +24,7 @@ And really, that's what Fonduels is all about.
 
 We certainly noticed how the reveal stage of game play effected the play experience the Cheeze Wizards game from Dapper Labs. In Cheeze Wizards if a player refused to reveal their moves, the two NFTs in question would be locked in a battle for 90 minutes until the automatic duel time out function would finally kick in and process the game result. Because Cheeze Wizards fight windows lasted for only three hours with about 4 hours between windows, most NFTs involved timed out duels won't get to battle again until the next fight window (even though a smoothly coordinated duel might typically settle in as fast as 15 to 20 minutes).
 
-![](https://medium.com/dapperlabs/a-step-by-step-walkthrough-of-a-cheeze-wizards-duel-b262701792e5)
+(more info on timed out duels: https://medium.com/dapperlabs/a-step-by-step-walkthrough-of-a-cheeze-wizards-duel-b262701792e5)
 
 With all of this in mind our team travelled to ETH Waterloo II and created Fonduels. 
 
