@@ -46,7 +46,7 @@ With our new game *Satoshis's Lost Faucet* just getting ready for launch (see: !
 
 We're hoping to have a beta version of Fonduels, with documentation, available in early spring. Stay tuned for more updates! 😊
 
-![](https://github.com/Cheeze-Of-Insight/coi-blog/blob/master/posts/feb2_2020/assets/shallweplayagame.png)
+![](https://github.com/Cheeze-Of-Insight/coi-blog/blob/master/posts/feb2_2020/assets/shallweplayagame-alpha.png)
 
 
 
