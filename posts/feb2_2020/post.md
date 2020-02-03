@@ -14,7 +14,7 @@ To prevent snooping on our tactics, we'll have our game encrypt the moves it upl
 
 ![](https://github.com/Cheeze-Of-Insight/coi-blog/blob/master/posts/feb2_2020/assets/gameover.png)
 
-While the above definitely works, it's adding an extra step of transactions, for each player, and comes at a cost of some time out logic to pad against the bruised egos of bad sportsmanship. 😄 Since the above logic applies to a wide variety of games, it would be boon to the community if we could somehow rid ourselves of this second stage of (reveal) transactions entirely...
+While the above definitely works, it's adding an extra step of transactions, for each player, and comes at a cost of some time out logic to pad against the bruised egos of bad sportsmanship. Since the above logic applies to a wide variety of games, it would be boon to the community if we could somehow rid ourselves of this second stage of (reveal) transactions entirely...
 
 And really, that's what Fonduels is all about.
 
