@@ -8,11 +8,13 @@
 
 ## That's cool, what's it got to do with blockchain games? 😊
 
-Imagine a turn based game processed a public blockchain like Ethereum where two players battle each other. The game works by each player submitting choices to a smart contract. The game contract takes those moves, processes them according to the game's logic, and declares one of the players victorious. Since the game is processed on Ethereum turns would be public to anyone who wants to see them, including your opponent who might be watching and waiting for your moves to cheat the outcome. To prevent snooping on our tactics, we'll have our game encrypt the moves it uploads to the blockchain and wait for both players to submit moves before revealing them publicly. This reveal commitment is a second transaction and some extra logic might be required to automatically process a game result in case only player decides to reveal. This could happen if the second player sees they already see lost, because of what player 1 revealed, and is being a bit of a sore loser 🥊 
+Imagine a turn based game processed a public blockchain like Ethereum where two players battle each other. The game works by each player submitting choices to a smart contract. The game contract takes those moves, processes them according to the game's logic, and declares one of the players victorious. Since the game is processed on Ethereum turns would be public to anyone who wants to see them, including your opponent who might be watching and waiting for your moves to cheat the outcome. 😱
+
+To prevent snooping on our tactics, we'll have our game encrypt the moves it uploads to the blockchain and wait for both players to submit moves before revealing them publicly. This reveal commitment is a second transaction and some extra logic might be required to automatically process a game result in case only player decides to reveal. This could happen if the second player sees they already see lost, because of what player 1 revealed, and is being a bit of a sore loser 🥊 
 
 ![](https://github.com/Cheeze-Of-Insight/coi-blog/blob/master/posts/feb2_2020/assets/gameover.png)
 
-While the above definitely works, it's adding an extra step of transactions, for each player, and comes at a cost of some time out logic to pad against the bruised egos of bad sportsmanship 😄 Since the above logic applies to a wide variety of games, it would be boon to the community if we could somehow rid ourselves of this second stage of (reveal) transactions entirely...
+While the above definitely works, it's adding an extra step of transactions, for each player, and comes at a cost of some time out logic to pad against the bruised egos of bad sportsmanship. 😄 Since the above logic applies to a wide variety of games, it would be boon to the community if we could somehow rid ourselves of this second stage of (reveal) transactions entirely...
 
 And really, that's what Fonduels is all about.
 
