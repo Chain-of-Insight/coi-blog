@@ -2,7 +2,7 @@
 
 ![](https://github.com/Cheeze-Of-Insight/coi-blog/blob/master/posts/feb2_2020/assets/secretcontracts.png)
 
-## Slow down there cheeze whiz, what's this Enigma?
+## Slow down there, what's this Enigma all about?
 
 > Enigma is a decentralized, open-source protocol that lets anyone perform computations on encrypted data, bringing privacy to smart contracts and public blockchains. Our mission: improve the adoption and usability of decentralized technologies, for the benefit of all.
 
