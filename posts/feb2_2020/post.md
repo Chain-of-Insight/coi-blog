@@ -6,7 +6,7 @@
 
 > Enigma is a decentralized, open-source protocol that lets anyone perform computations on encrypted data, bringing privacy to smart contracts and public blockchains. Our mission: improve the adoption and usability of decentralized technologies, for the benefit of all.
 
-** That's cool but what's it got to do with blockchain games?
+## That's cool but what's it got to do with blockchain games?
 
 So glad you asked 😊
 
