@@ -22,7 +22,7 @@ And really, that's what Fonduels is all about.
 
 ## Let the Fonduels begin!
 
-We noticed how the reveal stage effected the play experience the Cheeze Wizards game from Dapper Labs. In Cheeze Wizards if a player refused to reveal their moves, the two NFTs in question would be locked in a battle for 90 minutes until the automatic duel time out function would finally kick in and process the game result. Because Cheeze Wizards fight windows lasted for only three hours with about 4 hours between windows, most NFTs involved timed out duels won't get to battle again until the next fight window (even though a smoothly coordinated duel might typically settle in as fast as 15 to 20 minutes).
+We noticed how the reveal stage effected the play experience of the Cheeze Wizards game from Dapper Labs. In Cheeze Wizards, if a player refused to reveal their moves the two NFTs in question would be locked in a battle for 90 minutes until the automatic duel time out function kicks in and processes the game result. Because Cheeze Wizards fight windows lasted for only three hours, with about 4 hours in between windows, most NFTs involved timed out duels won't get to battle again until the next fight window even though a smoothly coordinated duel, with both players revealing, might typically settle in as fast as 15 to 20 minutes.
 
 (more info on timed out duels: https://medium.com/dapperlabs/a-step-by-step-walkthrough-of-a-cheeze-wizards-duel-b262701792e5)
 
@@ -32,7 +32,7 @@ With all of this in mind our team travelled to ETH Waterloo II and created Fondu
 
 > Enigma is a [decentralized] secure computation network that acts as a layer 2 solution for Ethereum. Enigma introduces the concept of secret contracts, which are identical to Ethereum contracts but can compute on sensitive data.
 
-By processing reveal transactions in an Enigma secret contract, we created a modified version of the Cheeze Wizards game that eliminated the second stage of reveal transactions and removed the need for resolving timed out duels. This provided players with a lightning quick gameplay experience at a minimum of 50% faster dueling and zero risk of duels timing out.
+By processing the reveal transactions in an Enigma secret contract, we created a modified version of the Cheeze Wizards game that completely eliminated the second stage of reveal transactions and removed the need for resolving any timed out duels. This provided players with lightning quick gameplay with at least 50% faster duel resolution and zero risk of timing out. We were able to do this without sacrificing security while keeping the game logic decentralized and thus, provably fair.
 
 
 ## What's next for Fonduels?
@@ -40,7 +40,7 @@ By processing reveal transactions in an Enigma secret contract, we created a mod
 - https://devpost.com/software/fonduels
 - https://github.com/Chain-of-Insight/fonduels
 
-We're excited by the opportunities Enigma has to offer driven crypto games. Now that we know what's possible we're rebuilding Fonduels into a general platform that can be used by any turn based blockchain game requiring committing and revealing encrypted turns.
+We're excited by the opportunities Enigma has to offer blockchain driven games. Now that we know what's possible, we're rebuilding Fonduels into a general platform that can be used by any turn based blockchain game requiring committing and revealing encrypted turns.
 
 With our new game *Satoshis's Lost Faucet* just getting ready for launch (see: ![](https://twitter.com/chainofinsight/status/1218663910120792065)), Fonduels has moved up to our top priority. 
 
