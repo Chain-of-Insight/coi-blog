@@ -1,0 +1,83 @@
+Approaching Tezos From an Ethereum Developer's Mindset - Our Journey
+
+***
+
+Recently our team has come to prefer developing on Tezos. Coming from an Ethereum background we first approached problems with an Ethereum developer's mindset which initially got in the way of learning, but our journey also led to our first happy accident: the creation of "Proof of Puzzle" and the PoP Machine Glow (PoPMG) zero knowledge prover.
+
+Thinking of Ethereum as a "world wide supercomputer" and its tx model (which makes it free to call non-payable functions), it's easy to fetch the result of a mathematic formula at no cost to the end user. To start with, we had a rough idea of what we wanted to build: an on-chain crypto-puzzle checker that automatically transfers rewards (like funds, tokens and NFTs) to the solver's wallet without requiring them to sweep an external wallet. The idea being, it would be free to check your riddle answers but cost a small amount of gas to claim a prize. After creating a rough mock up, we theorized it could be cheaper to process these transactions on Tezos instead of Ethereum. Or, as the pseudo-mysterious "L.M. Goodman" wrote in the Tezos whitepaper, 
+
+"A downside of...[Ethereum] is that the number of steps needed to execute a script is potentially unbounded, a property which is generally uncomputable. To address this problem, Ethereum has devised a system by which the miner validating the transaction requires a fee proportional to the complexity and number of steps needed to execute the contract." 
+
+After some initial testing there wasn't a huge value difference between transacting on either chain, at least for the puzzle computations we needed to perform, although our Tezos transactions indeed were slightly cheaper.
+However, we discovered other benefits which led us to continue building on Tezos. This is the story of our Tezos development journey!
+
+***
+
+To break it down, here's a few key points we learned about Tezos while developing PoPMG:
+
+- Tezos is uniquely well suited for blockchain oracle development
+
+- Tezos pairs well with games and cryptography implementations due to the functional programming approach of OCaml and Michelson
+
+- Tezos has more flexible storage possibilities for games
+
+
+The Oracle Thing:
+
+https://github.com/tqtezos/lorentz-contract-oracle
+
+https://you.better-call.dev/carthagenet/KT1CUTjTqf4UMf6c9A8ZA4e1ntWbLVTnvrKG
+https://you.better-call.dev/carthagenet/KT1CUTjTqf4UMf6c9A8ZA4e1ntWbLVTnvrKG/storage
+
+Because Tezos entry points have the natural convention of returning a contract's storage, they're perfect for developing oracle contracts.  The example above is one such a contract. This contract's storage is updated by a web server running pytezos every ~30 seconds, at each new block height on Carthagenet. At any moment anyone can call it and read back the value of Apple's stock (AAPL) to an accuracy of +-30 seconds, provided you trust the web server updating storage.
+
+
+
+Games and Cryptography:
+
+The functional programming approach used by Michelson makes Tezos very desirable for the smart contracts we develop for crypto puzzles. In short, not only is Michelson more readable than EVM code, it's easier to unit test because 1) you don't need to deploy ("originate" in Tezos verbiage) your contract to test it, and 2) it's easy to wrap your head around possible outcomes. This is because the only state mutations allowed will be to contract storage. This absence of mutations is a boon for blockchain cryptography because it keeps the crypto implementation "pure" (see: https://en.wikipedia.org/wiki/Pure_function) which both ensures optimal performance and deterministic integrity. It's a boon for game development because it removes possibilities for side effects (see: https://en.wikipedia.org/wiki/Side_effect_(computer_science)) in game logic.
+
+
+
+Data Storage:
+
+For a long time Ethereum development has been plagued by storage limitations even to the point where many Dapps (especially games) choose to release data like game scores in events and parse the event logs to show data in the dapp. We first were bumping our heads against this limit after developing an Ethereum based music player and jukebox (see: https://github.com/drewstaylor/jukeblox/blob/master/contracts/jukeblox.sol) back in 2018. While the contract itself runs smoothly, reading from or manipulating the list of songs didn't scale well over time. Gas costs started becoming an issue after song catalogues reached well into the thousands. 
+
+Another limitation regarding storage is the way stacks are handled by the EVM, as discussed in depth in this article: 
+
+https://medium.com/@earlz/the-faults-and-shortcomings-of-the-evm-bde4d09b8b6a
+
+The basic gist is you need to be careful about organizing your data and how you return it, as there's a limitation on stack depth in the EVM. This isn't really a deal breaker; developers have long since found creative ways to work around this limitation (e.g. see: https://github.com/ethereum-alarm-clock/ethereum-alarm-clock/blob/master/contracts/Library/RequestLib.sol#L86-L130) by bundling your data in arrays. However, this strategy tends have an accumulation effect in practice. Increased bundling => leads to increased parsing => increased computation => increased gas costs. By contrast, Tezos has a novel way of dealing with stack.  
+
+Consider for a moment the following excerpt from the Tezos Developer Resources guide (https://tezos.gitlab.io/whitedoc/michelson.html):
+
+"A Michelson program is a series of instructions that are run in sequence: each instruction receives as input the stack resulting of the previous instruction, and rewrites it for the next one. The stack contains both immediate values and heap allocated structures. All values are immutable and garbage collected. [...] The types of the input and output stack are fixed and monomorphic, and the program is typechecked before being introduced into the system. No smart contract execution can fail because an instruction has been executed on a stack of unexpected length or contents."
+
+Of course no system can ever process a computation of infinity length. Naturally, Tezos has storage limits too, although there is no fixed limit on the storage of a contract. That said, after a certain storage size it can become difficult to get your operation included in a block. Hard gas limits are no longer explicitly enforced by the Tezos protocol but bakers will notice if including a computation in a block is going tie up resources. 
+
+As the Tezos Developer guide explains:
+
+"A baker is more likely to include an operation with lower gas and storage limits because it takes less resources to execute so it is in the best interest of the user to pick limits that are as close as possible to the actual use."
+
+
+***
+
+What We're Up To At COI:
+
+
+We've made no secret of the fact we're working on a sequel to Satoshi's Lost Faucet, but it's difficult to describe the intense work that's already gone into its creation (and how much there's still left to do 😅). The working title of our the game is "Schrödinger's Cup". There's not much we can say publicly just at the moment, but we've really overhauled the concept of how puzzle checker forms should behave. To power this experience, we created a novel zero knowledge cryptography system on Tezos called "PoP Machine Glow". PoPMG eliminates the need to sweep the private key of a wallet so the transfering of prizes can be embedded directly into the solving experience without requiring the player to leave the dapp to go sweep a wallet.
+
+One thing we're really excited regarding PoPMG is it's the first zero knowledge lightweight enough to generate knowledge commitments from a mobile device. This greatly reduces the friction of requiring puzzles be solved from a dektop or laptop computer. By providing an on ramp for mobile users, we hope to usher in a new era of crypto puzzles targeting mainstream adoption. We're big fans of the original Myst game from Brøderbund and believe its success shows mainstream adoption for well designed puzzle games is not so far away as some might think.
+
+***
+
+The Legend of Tezos Nomic
+
+A super unique piece of Schrödinger's Cup that we can talk about (since it's not a puzzle) is our version of Peter Suber's Nomic running on Tezos. As the Tezos whitepaper notes:
+
+"Tezos can instantiate any blockchain based protocol. Its seed protocol specifies a procedure for stakeholders to approve amendments to the protocol, including amendments to the amendment procedure itself. Upgrades to Tezos are staged through a testing environment to allow stakeholders to recall potentially problematic amendments. [...] The philosophy of Tezos is inspired by Peter Suber’s Nomic[1], a game built around a fully introspective set of rules." - Tezos whitepaper (https://tezos.com/static/white_paper-2dc8c02267a8fb86bd67a108199441bf.pdf)
+
+There's a lot of usability work that needs to be done, but we've built a basic beta that plays through all the incredible psychic turns and twists of a game of Nomic (https://nomic.schrodingerscup.com). You can check out a live gameplay demo of our crude beta at: https://youtu.be/vloSAc__jpc?t=81
+
+***
+
